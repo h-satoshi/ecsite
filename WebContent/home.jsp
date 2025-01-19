@@ -14,72 +14,72 @@
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 	
-<title>Home画面</title>
+	<title>Home画面</title>
 
-<style type="text/css">
+	<style type="text/css">
 
-	body{
+		body{
 	
-		margin: 0;
-		padding: 0;
-		line-height: 1.6;
-		letter-spacing: 1px;
-		font-family: Verdana, Helvetica, sans-serif;
-		font-size: 12px;
-		color: #333;
-		background: #fff;
+			margin: 0;
+			padding: 0;
+			line-height: 1.6;
+			letter-spacing: 1px;
+			font-family: Verdana, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #333;
+			background: #fff;
 	
-	}
+		}
 	
-	table {
+		table {
 	
-		text-align: center;
-		margin: 0 auto;
+			text-align: center;
+			margin: 0 auto;
 	
-	}
+		}
 	
-	/* ==========ecsite LAYOUT========== */
-	#top{
+		/* ==========ecsite LAYOUT========== */
+		#top{
 	
-		width: 780px;
-		margin: 30px auto;
-		border: 1px solid #333;
+			width: 780px;
+			margin: 30px auto;
+			border: 1px solid #333;
 	
-	}
+		}
 	
-	#header{
+		#header{
 	
-		width: 100%;
-		height: 80px;
-		background-color: black;
+			width: 100%;
+			height: 80px;
+			background-color: black;
 	
-	}
+		}
 	
-	#main{
+		#main{
 	
-		width: 100%;
-		height: 500px;
-		text-align: center;
+			width: 100%;
+			height: 500px;
+			text-align: center;
 	
-	}
+		}
 	
-	#footer{
+		#footer{
 	
-		width: 100%;
-		height: 80px;
-		background-color: black;
-		clear: both;
+			width: 100%;
+			height: 80px;
+			background-color: black;
+			clear: both;
 	
-	}
+		}
 	
-	#text-center{
+		#text-center{
 	
-		display: inline-block;
-		text-align: center;
+			display: inline-block;
+			text-align: center;
 	
-	}
+		}
 
-</style>
+	</style>
 
 </head>
 <body>
@@ -109,12 +109,7 @@
 			
 			<s:if test="#session.login_user_id != null">
 			
-				<p>
-				
-					ログアウトする場合は
-					<a href='<s:url action="LogoutAction"/>'>こちら</a>
-					
-				</p>
+				<p>ログアウトする場合は<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
 			
 			</s:if>
 		

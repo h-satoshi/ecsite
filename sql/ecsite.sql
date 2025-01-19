@@ -2,19 +2,19 @@ set name utf8;
 
 set foreign_key_cehcks = 0;
 
---「ecsite」というデータベースがあったら、削除する
+/*--「ecsite」というデータベースがあったら、削除する--*/
 drop database if exists ecsite;
 
---「ecsite」というデータベースを作成する
+/*--「ecsite」というデータベースを作成する--*/
 create database if not exists ecsite;
 
---「ecsite」を利用する
+/*--「ecsite」を利用する--*/
 use ecsite;
 
---login_user_transactionがテーブル名
+/*--login_user_transactionがテーブル名--*/
 drop table if exists login_user_transaction;
 
---login_user_transactionに情報を保存する
+/*--login_user_transactionに情報を保存する--*/
 create table login_user_transactio(
 	id int not null primary key auto_increment,
 	login_id varchar(16) unique,
@@ -24,10 +24,10 @@ create table login_user_transactio(
 	updated_date datetime
 	);
 	
---item_info_transactionがテーブル名
+/*--item_info_transactionがテーブル名--*/
 drop table if exists item_info_transaction;
 
---item_info_transactionに情報を保存する
+/*--item_info_transactionに情報を保存する--*/
 create table item_info_transaction(
 	id int not null primary key auto_increment,
 	item_name varchar(30),
@@ -37,10 +37,10 @@ create table item_info_transaction(
 	update_date datetime
 	);
 
---user_buy_item_transactionがテーブル名
+/*--user_buy_item_transactionがテーブル名--*/
 drop table if exists user_buy_item_transaction;	
 
---user_buy_item_transactionに情報を保存する
+/*--user_buy_item_transactionに情報を保存する--*/
 create table user_buy_item_transaction(
 	id int not null primary key auto_increment,
 	item_transaction_id int,
@@ -52,10 +52,10 @@ create table user_buy_item_transaction(
 	delete_data datetime
 	);
 
---item_info_transactionに情報を格納する
+/*--item_info_transactionに情報を格納する--*/
 INSERT INTO item_info_transaction(item_name, item_price, item_stock)
 VALUES("ノートBook",100,50);
 
---login_user_transactionに情報を格納する
+/*--login_user_transactionに情報を格納する--*/
 INSERT INTO login_user_transaciton(login_id, login_pass, user_name)
 VALUES("diworks","diworks01","test");

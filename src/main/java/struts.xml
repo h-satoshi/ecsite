@@ -21,7 +21,7 @@
 		</action>
 		
 		<!-- HomeAction -->
-		<action name="HomeAction"
+<!--		<action name="HomeAction"-->
 		class="com.diworksdev.ecsite.action.HomeAction"
 		method="execute">
 		
@@ -32,7 +32,7 @@
 		</action>
 		
 		<!-- LoginAction -->
-		<action name="LoginAction"
+<!--		<action name="LoginAction"-->
 		class="com.diworksdev.ecsite.action.LoginAction"
 		method="execute">
 		
@@ -43,7 +43,7 @@
 		</action>
 		
 		<!-- UserCreateAction -->
-		<action name="UserCreateAction"
+<!--		<action name="UserCreateAction"-->
 		class="com.diworksdev.ecsite.action.UserCreateAction"
 		method="execute">
 		
@@ -52,7 +52,7 @@
 		</action>
 		
 		<!-- UserCreateConfirmAction -->
-		<action name="UserCreateConfirmAction"
+<!--		<action name="UserCreateConfirmAction"-->
 		class="com.diworksdev.ecsite.action.UserCreateConfirmAction"
 		method="execute">
 		
@@ -63,7 +63,7 @@
 		</action>
 		
 		<!-- UserCreateCompleteAction -->
-		<action name="UserCreateCompleteAction"
+<!--		<action name="UserCreateCompleteAction"-->
 		class="com.diworksdev.ecsite.action.UserCreateCompleteAction"
 		method="execute">
 		
@@ -72,7 +72,7 @@
 		</action>
 		
 		<!-- BuyItemAction -->
-		<action name="BuyItemAction"
+<!--		<action name="BuyItemAction"-->
 		class="com.diworksdev.ecsite.action.BuyItemAction"
 		method="execute">
 		
@@ -83,7 +83,7 @@
 		</action>
 		
 		<!-- BuyItemConfirmAction -->
-		<action name="BuyItemConfirmAction"
+<!--		<action name="BuyItemConfirmAction"-->
 		class="com.deworksdev.ecsite.action.BuyItemConfirmAction"
 		method="execute">
 		
@@ -94,7 +94,7 @@
 		</action>
 		
 		<!-- MyPageAction -->
-		<action name="MyPageAction"
+<!--		<action name="MyPageAction"-->
 		class="com.diworksdev.ecsite.action.MyPageAction"
 		method="execute">
 		
@@ -105,7 +105,7 @@
 		</action>
 		
 		<!-- LogoutAction -->
-		<action name="LogoutAction"
+<!--		<action name="LogoutAction"-->
 		class="com.diworksdev.ecsite.action.LogoutAction"
 		method="execute">
 		
