@@ -6,6 +6,7 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.diworksdev.ecsite.dao.BuyItemDAO;
 import com.diworksdev.ecsite.dao.LoginDAO;
+import com.diworksdev.ecsite.dto.BuyItemDTO;
 import com.diworksdev.ecsite.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -28,7 +29,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
 		if (((LoginDTO) session.get("loginUser")).getLoginFlg()) {
 			
 			result = SUCCESS;
-			buyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();
+			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();
 			
 			session.put("login_user_id", loginDTO.getLoginId());
 			session.put("id", buyItemDTO.getId());
