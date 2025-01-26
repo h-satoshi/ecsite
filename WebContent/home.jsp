@@ -39,6 +39,7 @@
 		}
 	
 		/* ==========ecsite LAYOUT========== */
+		
 		#top{
 	
 			width: 780px;
@@ -87,6 +88,7 @@
 	<div id="header">
 	
 		<div id="pr">
+		
 		</div>
 	
 	</div>
@@ -110,8 +112,7 @@
 			<s:if test="#session.login_user_id != null">
 			
 				<p>ログアウトする場合は
-				<a href='<s:url action="LogoutAction"/>'>
-				こちら</a></p>
+				<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
 			
 			</s:if>
 		
@@ -122,6 +123,7 @@
 	<div id="footer">
 	
 		<div id="pr">
+		
 		</div>
 	
 	</div>
