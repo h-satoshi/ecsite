@@ -47,11 +47,117 @@
 			border: 1px solid #333;
 		
 		}
+		
+		#header {
+		
+			width: 100%;
+			height: 80px;
+			background-color: black;
+		
+		}
+		
+		#main {
+		
+			width: 100%;
+			height: 500px;
+			text-align: center;
+		
+		}
+		
+		#footer {
+		
+			width: 100%;
+			height: 80px;
+			background-color: black;
+			clear: both;
+		
+		}
 	
 	</style>
 	
 </head>
 <body>
+
+	<div id="main">	
+		<div id="top">		
+			<p>BuyItem</p>		
+		</div>
+		
+		<div>		
+			<s:form action="BuyItemAction">			
+			<table>			
+				<tr>
+					<td>
+						<span>商品名</span>
+					</td>
+					
+					<td>
+						<s:property value="session.buyItem_name"/><br>
+					</td>						
+				</tr>
+				
+				<tr>
+					<td>
+						<span>値段</span>
+					</td>
+					
+					<td>
+						<s:property value="sessio.buyItem_price"/>
+						<span>円</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<span>購入個数</span>
+					</td>
+					
+					<td>
+						<select name="count">
+							<option value="1" selected="selected">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<span>支払い方法</span>
+					</td>
+					
+					<td>
+						<input type="radio" name="pay" value="1" cheked="cheked">現金払い
+						<input type="radio" name="pay" value="2">クレジットカード
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<s:submit value="購入"/>
+					</td>
+				</tr>
+			
+			</table>
+			
+			</s:form>
+			
+			<div>
+				<p>前画面に戻る場合はa<a href='<s:url action="GoHomeActionn"/>'>こちら</a></p>
+				<p>マイページはa<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
+			</div>
+		
+		</div>
+	
+	</div>
+	
+	<div id="footer">
+		<div id="pr">
+		
+		</div>
+	</div>
 
 </body>
 </html>
