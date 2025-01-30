@@ -86,46 +86,32 @@
 <body>
 
 	<div id="header">
-	
 		<div id="pr">
 		
 		</div>
-	
 	</div>
 	
 	<div id="main">
-	
 		<div id="top">
-		
 			<p>Home</p>
-		
 		</div>
 		
 		<div id="text-center">
-		
 			<s:form action="HomeAction">
-			
 				<s:submit value="商品購入"/>
-			
 			</s:form>
 			
 			<s:if test="#session.login_user_id != null">
-			
 				<p>ログアウトする場合は
-				<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
-			
+				<a href='<s:url action="LoginAction"/>'>こちら</a></p>
 			</s:if>
-		
 		</div>
-	
 	</div>
 	
 	<div id="footer">
-	
 		<div id="pr">
 		
 		</div>
-	
 	</div>
 
 </body>
