@@ -31,11 +31,77 @@
 			background: #fff;
 		
 		}
+		
+		table {
+			
+			text-align: center;
+			margin: 0 auto;
+			
+		}
 	
+	/* ========ID LAYOUT======== */
+		#top{
+		
+			width: 780px;
+			margin: 30px auto;
+			border: 1px solid #333;
+		
+		}
+		
+		#header{
+		
+			width: 100%;
+			height: 80px;
+			background-color: black;
+		
+		}
+		
+		#main{
+		
+			width: 100%;
+			height: 500px;
+			text-align: center;
+		
+		}
+		
+		#footer{
+		
+			width: 100%;
+			height: 80px;
+			background-color: black;
+			clear: both;
+		
+		}
+		
 	</style>
 	
 </head>
 <body>
+
+	<div id="header">
+		<div id="pr">
+		
+		</div>
+	</div>
+	
+	<div id="main">
+		<div id="top">
+			<p>UserCreateComplete</p>
+		</div>
+		
+		<div>
+			<h3>ユーザーの登録が完了致しました。</h3>
+			<div>
+				<a href='<s:url action="HomeAction"/>'>ログインへ</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div id="pr">
+		
+		</div>
+	</div>
 
 </body>
 </html>
