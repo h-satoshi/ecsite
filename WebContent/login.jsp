@@ -44,7 +44,7 @@
 		#top{
 		
 			width: 780px;
-			margin: 30 auto;
+			margin: 30px auto;
 			border: 1px solid #333;
 		
 		}
@@ -57,7 +57,7 @@
 		
 		}
 		
-		#main{
+		#main {
 		
 			width: 100%;
 			height: 500px;

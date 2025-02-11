@@ -38,69 +38,69 @@
 		
 		</action>
 		
-<!--		 UserCreateAction -->
-<!--		<action name="UserCreateAction"-->
-<!--		class="com.diworksdev.ecsite.action.UserCreateAction" method="execute">-->
+		<!-- UserCreateAction -->
+		<action name="UserCreateAction"
+		class="com.diworksdev.ecsite.action.UserCreateAction" method="execute">
 		
-<!--			<result name="success">userCreate.jsp</result>-->
+			<result name="success">userCreate.jsp</result>
 		
-<!--		</action>-->
+		</action>
 		
-<!--		 UserCreateConfirmAction -->
-<!--		<action name="UserCreateConfirmAction"-->
-<!--		class="com.diworksdev.ecsite.action.UserCreateConfirmAction" method="execute">-->
+		<!-- UserCreateConfirmAction -->
+		<action name="UserCreateConfirmAction"
+		class="com.diworksdev.ecsite.action.UserCreateConfirmAction" method="execute">
 		
-<!--			<result name="success">userCreateConfirm.jsp</result>-->
+			<result name="success">userCreateConfirm.jsp</result>
 			
-<!--			<result name="error">userCreate.jsp</result>-->
+			<result name="error">userCreate.jsp</result>
 		
-<!--		</action>-->
+		</action>
 		
-<!--		 UserCreateCompleteAction -->
-<!--		<action name="UserCreateCompleteAction"-->
-<!--		class="com.diworksdev.ecsite.action.UserCreateCompleteAction" method="execute">-->
+		<!-- UserCreateCompleteAction -->
+		<action name="UserCreateCompleteAction"
+		class="com.diworksdev.ecsite.action.UserCreateCompleteAction" method="execute">
 		
-<!--			<result name="success">userCreateComplete.jsp</result>-->
+			<result name="success">userCreateComplete.jsp</result>
 		
-<!--		</action>-->
+		</action>
 		
-<!--		 BuyItemAction -->
-<!--		<action name="BuyItemAction"-->
-<!--		class="com.diworksdev.ecsite.action.BuyItemAction" method="execute">-->
+		<!-- BuyItemAction -->
+		<action name="BuyItemAction"
+		class="com.diworksdev.ecsite.action.BuyItemAction" method="execute">
 		
-<!--			<result name="success">buyItemConfirm.jsp</result>-->
+			<result name="success">buyItemConfirm.jsp</result>
 			
-<!--			<result name="error">buyItem.jsp</result>-->
+			<result name="error">buyItem.jsp</result>
 		
-<!--		</action>-->
+		</action>
 		
-<!--		 BuyItemConfirmAction -->
-<!--		<action name="BuyItemConfirmAction"-->
-<!--		class="com.deworksdev.ecsite.action.BuyItemConfirmAction" method="execute">-->
+		<!-- BuyItemConfirmAction -->
+		<action name="BuyItemConfirmAction"
+		class="com.deworksdev.ecsite.action.BuyItemConfirmAction" method="execute">
 		
-<!--			<result name="success">buyItemComplete.jsp</result>-->
+			<result name="success">buyItemComplete.jsp</result>
 			
-<!--			<result name="back">buyItem.jsp</result>-->
+			<result name="back">buyItem.jsp</result>
 		
-<!--		</action>-->
+		</action>
 		
-<!--		 MyPageAction -->
-<!--		<action name="MyPageAction"-->
-<!--		class="com.diworksdev.ecsite.action.MyPageAction" method="execute">-->
+		<!-- MyPageAction -->
+		<action name="MyPageAction"
+		class="com.diworksdev.ecsite.action.MyPageAction" method="execute">
 		
-<!--			<result name="success">myPage.jsp</result>-->
+			<result name="success">myPage.jsp</result>
 			
-<!--			<result name="error">home.jsp</result>-->
+			<result name="error">home.jsp</result>
 		
-<!--		</action>-->
+		</action>
 		
-<!--		 LogoutAction -->
-<!--		<action name="LogoutAction"-->
-<!--		class="com.diworksdev.ecsite.action.LogoutAction" method="execute">-->
+		<!-- LogoutAction -->
+		<action name="LogoutAction"
+		class="com.diworksdev.ecsite.action.LogoutAction" method="execute">
 		
-<!--			<result name="success">home.jsp</result>-->
+			<result name="success">home.jsp</result>
 		
-<!--		</action>-->
+		</action>
 		
 	</package>
 
