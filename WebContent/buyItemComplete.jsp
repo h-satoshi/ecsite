@@ -47,9 +47,57 @@
 			border: 1px solid #333;
 		
 		}
+		
+		#header{
+		
+			width: 100%;
+			height: 80px;
+			background-color: black;
+		
+		}
+		
+		#main{
+		
+			width: 100%;
+			height: 500px;
+			text-align: center;
+		
+		}
+		
+		#footer{
+		
+			width: 100%;
+			height: 80px;
+			background-color: black;
+			clear: both;
+		
+		}
+		
 	</style>
+	
 </head>
 <body>
+
+	<div id = "main">
+		<div id = "top">
+			<p>BuyItemComplete</p>
+		</div>
+		
+		<div>
+			<p>購入手続きが完了いたしました。</p>
+			<div>
+				<a href='<s:url action = "MyPageAction"/>'>マイページ</a>
+					<span>から購入履歴の確認が可能です。</span>
+				<p>Homeへ戻る場合はa<a href = '<s:url action = "GoHomeAction"/>'>こちら</a></p>
+			</div>
+		</div>
+	</div>
+	
+	<div id = "footer">
+		<div id = "pr">
+		
+		</div>
+	</div>
 
 </body>
 </html>
