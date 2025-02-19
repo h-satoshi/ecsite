@@ -26,13 +26,14 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 		
 		}
 		
-		if (deleteFlg == null) {
+		if (deleteFlg == null) {	//履歴の削除がされているかチェックする
 			
 			String item_transaction_id = session.get("id").toString();
 			String user_master_id = session.get("login_user_id").toString();
+			//DBから取得した履歴情報を「myPageList」に格納する
 			myPageList = myPageDAO.getMyPageUserInfo(item_transaction_id, user_master_id);
 			
-		} else if (deleteFlg.equals("1")) {
+		} else if (deleteFlg.equals("1")) {		//「delete」メソッドを呼び出して、履歴の削除処理を行う
 			
 			delete();
 			
@@ -42,9 +43,11 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 		return result;
 	}
 	
-	public void delete() throws SQLException {
+	public void delete() throws SQLException {	//履歴の削除を行うためのメソッド
+		
 		String item_transaction_id = session.get("id").toString();
 		String user_master_id = session.get("login_user_id").toString();
+		//DBから削除した履歴情報の件数を「res」に格納する
 		int res = myPageDAO.buyItemHistoryDelete(item_transaction_id, user_master_id);
 		
 		if (res > 0) {

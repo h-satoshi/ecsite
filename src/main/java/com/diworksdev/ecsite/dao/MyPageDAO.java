@@ -14,13 +14,15 @@ public class MyPageDAO {
 	private DBConnector dbConnector = new DBConnector();
 	private Connection connection = dbConnector.getConnection();
 	
-	public ArrayList<MyPageDTO> getMyPageUserInfo(String item_transaction_id, String user_master_id) throws SQLException {
+	public ArrayList<MyPageDTO> 
+	getMyPageUserInfo(String item_transaction_id, String user_master_id)
+	throws SQLException {	//DBから購入履歴を取得するためのメソッド
 		
 		ArrayList<MyPageDTO> myPageDTO = new ArrayList<MyPageDTO>();
 		
 		String spl = "SELECT ubit.id, iit.item_name, ubit.total_price, ubit.total_count, ubit.pay, ubit.insert_date "
 					+ "FROM user_buy_item_transaction ubit "
-					+ "LEFT JOIN item_info_transaction iit "
+					+ "LEFT JOIN item_info_transaction iit "	//「LEFT JOIN」を用いて複数のテーブルを結合することによってユーザ情報と履歴情報を紐づけして一括で取得することができる
 					+ "ON ubit.item_transaction_id = iit.id "
 					+ "WHERE ubit.item_transaction_id = ? AND ubit.user_master_id = ? "
 					+ "ORDER BY insert_date DESC";
@@ -36,6 +38,7 @@ public class MyPageDAO {
 			while (resultSet.next()) {
 				
 				MyPageDTO dto = new MyPageDTO();
+				//取得した結果を1件ずつDTOに格納し、更にDTOをArrayListに格納している
 				dto.setId(resultSet.getString("id"));
 				dto.setItemName(resultSet.getString("item_name"));
 				dto.setTotalPrice(resultSet.getString("total_price"));
@@ -60,7 +63,9 @@ public class MyPageDAO {
 		
 	}
 	
-	public int buyItemHistoryDelete(String item_transaction_id, String user_master_id) throws SQLException {
+	public int buyItemHistoryDelete
+	(String item_transaction_id, String user_master_id) 
+	throws SQLException {	//DBから購入履歴を削除するためのメソッド
 		
 		String sql = "DELETE FROM user_buy_item_transaction "
 					+ "WHERE item_transaction_id = ? AND user_master_id = ?";
@@ -85,7 +90,7 @@ public class MyPageDAO {
 			
 		}
 		
-		return result;
+		return result;	//Actionクラスに削除した件数を返す
 		
 	}
 

@@ -1,12 +1,13 @@
 package com.diworksdev.ecsite.dto;
 
 public class LoginDTO {
-	
+	//テーブルカラムに対応したフィールド変数を宣言する
 	private String loginId;
 	private String loginPassword;
 	private String userName;
 	private boolean loginFlg = false;
 	
+	//フィールド変数に対応したGetterSetterを定義する
 	public String getLoginId() {
 		
 		return loginId;
