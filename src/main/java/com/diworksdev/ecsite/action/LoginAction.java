@@ -10,7 +10,6 @@ import com.diworksdev.ecsite.dto.BuyItemDTO;
 import com.diworksdev.ecsite.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-
 public class LoginAction extends ActionSupport implements SessionAware {
 	
 	private String loginUserId;
@@ -26,6 +25,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
 		loginDTO = loginDAO.getLoginUserInfo(loginUserId, loginPassword);
 		session.put("loginUser", loginDTO);
 		
+		/*入力値からユーザー情報の検索を行う*/
 		if (((LoginDTO) session.get("loginUser")).getLoginFlg()) {
 			
 			result = SUCCESS;

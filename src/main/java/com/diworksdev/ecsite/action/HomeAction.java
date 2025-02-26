@@ -16,11 +16,11 @@ public class HomeAction extends ActionSupport implements SessionAware {
 		
 		String result = "login";
 		
-		if (session.containsKey("login_user_id")) {	
+		if (session.containsKey("login_user_id")) {		/*ログインしているか判定する*/
 			
 			BuyItemDAO buyItemDAO = new BuyItemDAO();
 			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();
-			
+			/*DBから取得した情報をsessionに格納する*/
 			session.put("id", buyItemDTO.getId());
 			session.put("buyItem_name", buyItemDTO.getItemName());
 			session.put("buyItem_price", buyItemDTO.getItemPrice());
@@ -29,8 +29,9 @@ public class HomeAction extends ActionSupport implements SessionAware {
 			
 		}
 		
-		return result;
-		
+		return result;	/*「execute」メソッドの戻り値として、*/
+						/*ログイン状態の場合は「SUCCESS」*/
+						/*ログインしていない場合は「login」を返す*/
 	}
 	
 	@Override

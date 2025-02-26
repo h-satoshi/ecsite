@@ -5,13 +5,13 @@ set foreign_key_checks = 0;
 /*「ecsite」というデータベースがあったら、削除する*/
 drop database if exists ecsite;
 
-/*「ecsite」というデータベースを作成する*/
+/*「ecsite」データベースを作成する*/
 create database if not exists ecsite;
 
 /*「ecsite」を利用する*/
 use ecsite;
 
-/*login_user_transactionがテーブル名*/
+/*「ecsite」にlogin_user_transactionというテーブルがあったら、削除する*/
 drop table if exists login_user_transaction;
 
 /*login_user_transactionに情報を保存する*/
@@ -24,7 +24,7 @@ insert_date datetime,
 updated_date datetime
 );
 	
-/*item_info_transactionがテーブル名*/
+/*「ecsite」にitem_info_transactionというテーブルがあったら、削除する*/
 drop table if exists item_info_transaction;
 
 /*item_info_transactionに情報を保存する*/
@@ -37,7 +37,7 @@ insert_date datetime,
 update_date datetime
 );
 
-/*user_buy_item_transactionがテーブル名*/
+/*「ecsite」にuser_buy_item_transactionというテーブルがあったら、削除する*/
 drop table if exists user_buy_item_transaction;	
 
 /*user_buy_item_transactionに情報を保存する*/
