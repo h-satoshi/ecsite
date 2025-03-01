@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnector {
-	
     //------- MySQL接続に必要な情報設定 -------//
 	private static String driverName = "com.mysql.jdbc.Driver";	
 	private static String url = "jdbc:mysql://localhost/ecsite";	
@@ -16,8 +15,7 @@ public class DBConnector {
 		
 		Connection con = null;
 		
-	try {
-		
+	try {		
 		//------- 自分のMySQLへ接続する準備 -------//
 		Class.forName(driverName);
 		
@@ -32,8 +30,7 @@ public class DBConnector {
 		
 		e.printStackTrace();
 		
-	}
-	
+	}	
 	//------- MySQLに接続できたか情報を渡す -------//
 	return con;
 		
