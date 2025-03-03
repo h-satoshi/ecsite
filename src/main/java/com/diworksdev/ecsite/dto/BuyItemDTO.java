@@ -3,7 +3,6 @@ package com.diworksdev.ecsite.dto;
 public class BuyItemDTO {
 	
 	public int id;
-	
 	public String itemName;
 	public String itemPrice;
 	

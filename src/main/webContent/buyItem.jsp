@@ -77,6 +77,11 @@
 	
 </head>
 <body>
+	<div id="header">
+		<div id="pr">
+		
+		</div>
+	</div>
 
 	<div id="main">	
 		<div id="top">		
@@ -145,8 +150,8 @@
 			</s:form>
 			
 			<div>
-				<p>前画面に戻る場合はa<a href='<s:url action="GoHomeActionn"/>'>こちら</a></p>
-				<p>マイページはa<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
+				<p>前画面に戻る場合は<a href='<s:url action="GoHomeActionn"/>'>こちら</a></p>
+				<p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
 			</div>
 		
 		</div>

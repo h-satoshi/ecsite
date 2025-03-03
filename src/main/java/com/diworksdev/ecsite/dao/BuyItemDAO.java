@@ -15,7 +15,7 @@ public class BuyItemDAO {
 	
 	public BuyItemDTO getBuyItemInfo() {
 		//商品情報を取得する
-		String sql = "SELECT id, item_neme, item_price FROM item_info_transaction";
+		String sql = "SELECT id, item_name, item_price FROM item_info_transaction";
 		
 		try {
 			//SQL文を実行する
