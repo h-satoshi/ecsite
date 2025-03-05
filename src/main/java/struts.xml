@@ -60,7 +60,7 @@
 			<result name="error">buyItem.jsp</result>
 		</action>
 
-<!--		 BuyItemConfirmAction -->
+		<!-- BuyItemConfirmAction -->
 <!--		<action name="BuyItemConfirmAction"-->
 <!--		class="com.deworksdev.ecsite.action.BuyItemConfirmAction"-->
 <!--		method="execute">-->
