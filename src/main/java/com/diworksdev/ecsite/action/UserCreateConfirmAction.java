@@ -17,11 +17,11 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	public String execute() {
 		
 		String result=SUCCESS;
-		
+		// 未入力の有無を確認する //
 		if (!(loginUserId.equals(""))
 			&& !(loginPassword.equals(""))
 			&& !(userName.equals(""))) {
-			
+			// 確認画面で表示したい値をセッションに格納する //
 			session.put("loginUserId", loginUserId);
 			session.put("loginPassword", loginPassword);
 			session.put("userName", userName);

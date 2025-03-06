@@ -101,7 +101,7 @@
 						</td>
 						
 						<td>
-							<s:property value="loginUserID" escape="false"/>
+							<s:property value="loginUserId" escape="false"/>
 						</td>
 					</tr>
 					
