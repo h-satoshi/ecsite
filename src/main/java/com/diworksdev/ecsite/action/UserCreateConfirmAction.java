@@ -12,7 +12,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	private String loginPassword;
 	private String userName;
 	public Map<String, Object> session;
-	private String erroMessage;
+	private String errorMessage;
 	
 	public String execute() {
 		
@@ -81,13 +81,13 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	
 	public String getErrorMessage() {
 		
-		return erroMessage;
+		return errorMessage;
 		
 	}
 	
 	public void setErrorMessage(String errorMessage) {
 		
-		this.erroMessage=errorMessage;
+		this.errorMessage=errorMessage;
 		
 	}
 	
