@@ -61,14 +61,14 @@
 		</action>
 
 		<!-- BuyItemConfirmAction -->
-<!--		<action name="BuyItemConfirmAction"-->
-<!--		class="com.deworksdev.ecsite.action.BuyItemConfirmAction"-->
-<!--		method="execute">-->
-<!--			<result name="success">buyItemComplete.jsp</result>-->
-<!--			<result name="back">buyItem.jsp</result>-->
-<!--		</action>-->
+		<action name="BuyItemConfirmAction"
+		class="com.deworksdev.ecsite.action.BuyItemConfirmAction"
+		method="execute">
+			<result name="success">buyItemComplete.jsp</result>
+			<result name="back">buyItem.jsp</result>
+		</action>
 
-<!--		 MyPageAction -->
+		<!-- MyPageAction -->
 <!--		<action name="MyPageAction"-->
 <!--		class="com.diworksdev.ecsite.action.MyPageAction" -->
 <!--		method="execute">-->
@@ -76,7 +76,7 @@
 <!--			<result name="error">home.jsp</result>-->
 <!--		</action>-->
 
-<!--		 LogoutAction -->
+		<!-- LogoutAction -->
 <!--		<action name="LogoutAction"-->
 <!--		class="com.diworksdev.ecsite.action.LogoutAction" -->
 <!--		method="execute">-->
