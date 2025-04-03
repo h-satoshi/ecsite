@@ -19,8 +19,7 @@ public class DBConnector {
 		//------- 自分のMySQLへ接続する準備 -------//
 		Class.forName(driverName);
 		
-		con = (Connection) DriverManager.
-			   getConnection(url,user,password);
+		con = (Connection) DriverManager.getConnection(url,user,password);
 		
 	} catch (ClassNotFoundException e) {
 		
