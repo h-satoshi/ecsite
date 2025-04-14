@@ -56,6 +56,14 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 	}
 	
 	public ArrayList<MyPageDTO> getArrayList() {
-		
+		return this.myPageList;
+	}
+	
+	public String getMessage() {
+		return this.message;
+	}
+	
+	public void setMessage(String message) {
+		this.message = message;
 	}
 }
