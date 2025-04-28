@@ -44,4 +44,4 @@ delete_data datetime
 /*item_info_transactionに情報を格納する*/
 INSERT INTO item_info_transaction(item_name, item_price, item_stock) VALUES("ノートBook", 100, 50);
 /*login_user_transactionに情報を格納する*/
-INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("diworks","diworks01","test");
+INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("diworks", "diworks01", "test");

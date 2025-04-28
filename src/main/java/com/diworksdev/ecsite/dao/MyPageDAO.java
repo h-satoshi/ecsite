@@ -59,6 +59,8 @@ public class MyPageDAO {
 			result = preparedStatement.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally {
+			connection.close();
 		}
 		return result;
 	}

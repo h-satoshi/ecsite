@@ -77,9 +77,8 @@
 	</style>
 	
 	<script type="text/javascript">	
-	
 		function submitAction(url) {
-			$('form').attr('action','url');
+			$('form').attr('action', url);
 			$('form').submit();			
 		}
 		
@@ -108,7 +107,7 @@
 				
 				<tr>
 					<td>値段</td>
-					<td><s:property value = "session.buyItem_price"/><span>円</span></td>
+					<td><s:property value = "session.total_price"/><span>円</span></td>
 				</tr>
 				
 				<tr>

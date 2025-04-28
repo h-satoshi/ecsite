@@ -14,7 +14,7 @@ public class HomeAction extends ActionSupport implements SessionAware {
 	public String execute() {
 		//ログイン済みか判定する
 		//ログインしている場合は商品画面に遷移させる
-		String result="lgin";
+		String result="login";
 		if (session.containsKey("login_user_id")) {
 			BuyItemDAO buyItemDAO = new BuyItemDAO();
 			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();
