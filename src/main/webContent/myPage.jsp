@@ -96,11 +96,11 @@
 		</div>
 		
 		<div>
-			<s:if test="myPageList==null">
+			<s:if test="myPageList == null">
 				<h3>ご購入情報はありません。</h3>
 			</s:if>
 			
-			<s:elseif test="message==null">
+			<s:elseif test="message == null">
 				<h3>ご購入情報は以下になります。</h3>
 				<table border="1">
 					<tr>
@@ -123,7 +123,7 @@
 				</table>
 				
 				<s:form action="MyPageAction">
-					<input type="hidden" name="deleteFlg">
+					<input type="hidden" name="deleteFlg" value="1">
 					<s:submit value="削除"/>
 				</s:form>			
 			</s:elseif>
